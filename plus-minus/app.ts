@@ -1,0 +1,46 @@
+/*
+ * Complete the 'plusMinus' function below.
+ *
+ * The function accepts INTEGER_ARRAY arr as parameter.
+ */
+
+function plusMinus(arr: number[]): string {
+    // Write your code here
+    const l: number = arr.length
+    const posArr: number[] = [];
+    const negArr: number[] = [];
+    const zerosArr: number[] = [];
+    
+    
+    arr.forEach((num: number) => {
+        if (num > 0) {
+            posArr.push(num);
+        }
+        if (num < 0) {
+            negArr.push(num);
+        }
+        if (num === 0) {
+            zerosArr.push(num);
+        }
+    });
+    
+    const posRatio: string = (posArr.length / l).toPrecision(6);
+    const negRatio: string = (negArr.length / l).toPrecision(6);
+    const zeroRatio: string = (zerosArr.length / l).toPrecision(6);
+    
+    const output: string = `${posRatio}\n${negRatio}\n${zeroRatio}`
+
+    return output;
+}
+
+function main() {
+    const arr1: number[] = [-1, -1, 0, 0, 0, 1];
+    const arr2: number[] = [0, -1, 0, 1, 0, 1];
+    const arr3: number[] = [1, 1, 0, -1, 0, 1];
+
+    console.log(plusMinus(arr1));
+    console.log(plusMinus(arr2));
+    console.log(plusMinus(arr3));
+}
+
+main()

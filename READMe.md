@@ -6,3 +6,6 @@ Given an array of integers, calculate the ratios of its elements that are positi
 
 ## [Min Max Sum](https://github.com/NateSkiles/TypeScript-Coding-Challenges/blob/master/min-max-sum/app.ts)
 Generate an array of 5 positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values.
+
+## [Time Conversion](https://github.com/NateSkiles/TypeScript-Coding-Challenges/blob/main/time-conversion/time-conversion.ts)
+Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.

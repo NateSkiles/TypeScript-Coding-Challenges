@@ -32,15 +32,15 @@ function plusMinus(arr: number[]): string {
     const negRatio: string = (negArr.length / l).toPrecision(6);
     const zeroRatio: string = (zerosArr.length / l).toPrecision(6);
     
-    const output: string = `${posRatio}\n${negRatio}\n${zeroRatio}`
+    const output: string = `Positive: ${posRatio}\nNegative: ${negRatio}\n Zero: ${zeroRatio}`
 
     return output;
 }
 
 function main() {
     const arr1: number[] = [-1, -1, 0, 0, 0, 1];
-    const arr2: number[] = [0, -1, 0, 1, 0, 1];
-    const arr3: number[] = [1, 1, 0, -1, 0, 1];
+    const arr2: number[] = [0, -1, 0, 1, 0, 1, 0 ,0, -1];
+    const arr3: number[] = [1, 1, 0, -1, 0, 1, 1];
 
     console.log(plusMinus(arr1));
     console.log(plusMinus(arr2));
